@@ -1,0 +1,271 @@
+---
+title: "BUA 455 - Data Management for Business"
+subtitle: "Learning Innovation Grant Presentation"  
+author: "Penelope Pooler Eisenbies"
+date: "May 10, 2022"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%/%total%" 
+      highlightStyle: arta
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      keep_md: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.retina = 2,
+  warning = FALSE,
+  message = FALSE,
+  htmltools.preserve.raw = FALSE, # needed for windows
+  scipen=100,
+  getSymbols.warning4.0 = FALSE
+)
+
+
+# install helper package that loads and installs other packages, if needed
+if (!require("pacman")) install.packages("pacman", repos = "http://lib.stat.cmu.edu/R/CRAN/")
+
+# install and load required packages
+pacman::p_load(pacman, tidyverse, fontawesome)
+
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+
+library(xaringanthemer)
+
+palette <- c(
+  SU_Orange1        = "#F76900",
+  SU_Orange2        = "#FF8E00",
+  SU_Red_Orange     = "#FF431B",
+  SU_Blue1          = "#000E54",
+  SU_Blue2          = "#203299",
+  SU_Light_Blue     = "#2B72D7",
+  SU_White          = "#FFFFFF",
+  SU_Light_Gray     = "#ADB3B8",
+  SU_Medium_Gray    = "#707780",
+  SU_Black          = "#000000", 
+  
+  steel_blue        = "#4682B4",
+  corn_flower_blue  = "#6495ED",
+  deep_sky_blue     = "#00BFFF",
+  dark_magenta      = "#8B008B",
+  medium_orchid     = "#BA55D3",
+  lime_green        = "#32CD32",
+  light_sea_green   = "#20B2AA",
+  chartreuse        = "#7FFF00"
+  
+)
+
+
+
+style_duo(
+  
+  title_slide_text_color = "#F76900",       # SU_Orange1
+  title_slide_background_color = "#000E54", # SU_Blue1
+  primary_color = "#203299",                # SU_Blue2
+  secondary_color = "#FF8E00",              # SU_Orange2
+  inverse_header_color = "#FFFFFF",         # SU_White
+  link_color = "#2B72D7",                   # SU_Light_Blue
+  code_inline_color = "#FF431B",            # SU_Red_Orange
+  text_bold_color = "#F76900",              # SU_Orange1
+  
+  header_font_google = google_font("Open Sans"),
+  text_font_google = google_font("Open Sans"),
+  code_font_google = google_font("Source Code Pro"),
+  colors = palette
+)
+
+
+```
+
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
+### Data Management for Business 
+
+.pull-left[
+  
+  - Course developed for today's **data-driven** world.
+
+- Data is a now a **public-facing** aspect of business and management.
+
+- Students learn how to acquire, combine, 'wrangle' and curate data 
+
+- All assignments, tests, and final project are done in **R and Rstudio**
+
+- Course is divided into four main parts
+
+
+]
+
+.pull-right[
+
+![Data skills flowchart](docs_files/images/data_project_flow_chart.png)
+
+]
+
+---
+
+background-image: url("docs_files/images/tidyverse.png")
+background-position: right
+background-size: contain
+
+### Part 1
+
+.pull-left[
+
+**Project Skills, Data Wrangling**
+
+  - R coding environment, R projects, RStudio
+  
+    - File management and documentation
+  
+  - Data skills:
+     - Selecting variables and formatting variables
+     - filtering data
+     - grouping and summarizing data
+     - reshaping data for plots or tables
+     - Visualizing and presenting data
+    
+- ***Course Project introduced and groups determined after Part 1***
+
+]
+
+
+
+---
+
+### **Part 2:**  
+
+.pull-left[
+
+**Importing and Combining Data from Different Sources**
+
+  - Data formats
+  - Joining datasets in different ways
+  - Managing and cleaning text string data
+  - Documenting and crediting data sources
+  - Expanding on skills from Part 1
+
+
+***Data Sources and Project Ideas discussed during Part 2.***
+  
+  - Groups submit a draft and final project proposal.
+
+]
+
+.pull-right[
+
+![example data sources](docs_files/images/data_sources.png)
+
+]
+
+
+  
+---
+
+.panelset[
+
+.panel[.panel-name[ Part 3 ]
+
+  - Students transition from individual to group work
+  
+  - Geographic data management
+  
+  - More with text, and troubleshooting data issues
+  
+  - Student Project Questions
+  
+  - Curating data in different formats, written documents, html files, slides
+  
+  - Time permitting - additional 'Literate Programming' skills
+  
+     - Using RStudio to create reports or slides (like this set)
+     
+     - Introduction to github and version control
+
+]
+
+.panel[.panel-name[**Example Map Data**]
+
+![U.S.A state population on ln scale](docs_files/images/states_lnpop.png)
+
+]
+
+]
+
+     
+  
+---
+
+### Part 4
+
+**Group Project**
+
+  - **Students Groups (5 - 6 Students) :**
+     - Develop a proposal with 3 or more questions
+     - Identify multiple data sources to address questions
+     - Combine and curate data to develop a multi-panel dashboard
+
+
+  - **Dashboard must include both:**
+     - Interactive and static visualizations with explanatory text
+     - Linked text citations to data sources
+     
+  - **Accompanying the dashboard are two written memos**
+
+     - Memo 1: To supervisor who would have to present dashboard
+     - Memo 2: to colleague on how to update dashboard
+
+
+**Students manage, curate, and present data in a collaborative setting to a achieve an objective.**
+
+---
+
+### Course Challenges
+
+- First iteration developed with short notice for Spring 2021
+
+  - Hybrid (mostly remote) setting
+
+- R and Rstudio are changing rapidly
+
+  - Improvements and changes by the month
+  
+  - Open source means more work to keep software up to date
+  
+  - But software is great and getting better
+  
+- Wide variability in student comfort level with coding 
+
+  - It's akin to learning a new language
+
+  - Requires practice and patience
+
+- Effective assessment of data management skills is difficult
+
+---
+  
+  ### Effective Assessment
+  
+  - Assessing skills is key for the success of the course
+
+- Testing data management skills in a timed in-class setting is unrealistic
+
+- Take-home tests invite academic dishonesty (too much temptation)
+
+- My solution: 
+  
+  Two In-class Tests (70 min.)
+
+
