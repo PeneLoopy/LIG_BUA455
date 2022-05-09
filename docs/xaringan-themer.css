@@ -46,13 +46,13 @@
   --text-color: #FFFDFC;
   --header-color: #FF8E00;
   --background-color: #203299;
-  --link-color: #2B72D7;
+  --link-color: #FF4500;
   --text-bold-color: #F76900;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #203299;
   --inverse-background-color: #FF8E00;
   --inverse-header-color: #FFFFFF;
-  --inverse-link-color: #2B72D7;
+  --inverse-link-color: #FF4500;
   --title-slide-background-color: #000E54;
   --title-slide-text-color: #F76900;
   --header-background-color: #FF8E00;
@@ -77,6 +77,7 @@
   --lime_green: #32CD32;
   --light_sea_green: #20B2AA;
   --chartreuse: #7FFF00;
+  --orange_red: #FF4500;
 }
 
 html {
@@ -407,5 +408,11 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 .bg-chartreuse {
   background-color: var(--chartreuse);
+}
+.orange_red {
+  color: var(--orange_red);
+}
+.bg-orange_red {
+  background-color: var(--orange_red);
 }
 
