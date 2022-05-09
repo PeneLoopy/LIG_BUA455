@@ -1,10 +1,12 @@
 ---
 title: "BUA 455 - Data Management for Business"
+
 subtitle: "Learning Innovation Grant Presentation"  
 author: "Penelope Pooler Eisenbies"
 date: "May 10, 2022"
 output:
   xaringan::moon_reader:
+    seal: false
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%/%total%" 
@@ -31,7 +33,7 @@ knitr::opts_chunk$set(
 if (!require("pacman")) install.packages("pacman", repos = "http://lib.stat.cmu.edu/R/CRAN/")
 
 # install and load required packages
-pacman::p_load(pacman, tidyverse, fontawesome)
+pacman::p_load(pacman, tidyverse, fontawesome, xaringanExtra)
 
 ```
 
@@ -75,21 +77,68 @@ style_duo(
   link_color = "#2B72D7",                   # SU_Light_Blue
   code_inline_color = "#FF431B",            # SU_Red_Orange
   text_bold_color = "#F76900",              # SU_Orange1
-  
+
   header_font_google = google_font("Open Sans"),
   text_font_google = google_font("Open Sans"),
   code_font_google = google_font("Source Code Pro"),
   colors = palette
 )
 
-
 ```
 
 
 ```{r xaringan-panelset, echo=FALSE}
+
 xaringanExtra::use_panelset()
+
 ```
 
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+
+```
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+
+```
+
+```{r xaringan-animate-css, echo=FALSE}
+xaringanExtra::use_animate_css()
+
+```
+
+```{r xaringan-animate-all, echo=FALSE}
+xaringanExtra::use_animate_all("slide_left")
+
+```
+
+
+
+background-image: url("docs_files/images/whitman_faded.png")
+background-size: cover
+
+class: center, middle
+
+## "BUA 455 - Data Management for Business"
+
+### "Learning Innovation Grant Presentation" 
+
+<br>
+
+<br>
+
+#### Penelope Pooler Eisenbies
+
+#### May 10, 2022
+
+---
 
 ### Data Management for Business 
 
@@ -116,6 +165,7 @@ xaringanExtra::use_panelset()
 
 ---
 
+
 background-image: url("docs_files/images/tidyverse.png")
 background-position: right
 background-size: contain
@@ -137,6 +187,7 @@ background-size: contain
      - reshaping data for plots or tables
      - Visualizing and presenting data
     
+  - Assignments 1 - 3 reinforce these skills
 - ***Course Project introduced and groups determined after Part 1***
 
 ]
@@ -156,9 +207,13 @@ background-size: contain
   - Managing and cleaning text string data
   - Documenting and crediting data sources
   - Expanding on skills from Part 1
+  
+- Assignments 4 and 5 - Part 1 (Dashboard Assignment)
+
+  - Require more advanced skills and take more time
 
 
-***Data Sources and Project Ideas discussed during Part 2.***
+***Data Sources and Project Ideas Introduced***
   
   - Groups submit a draft and final project proposal.
 
@@ -174,13 +229,20 @@ background-size: contain
   
 ---
 
+```{r echo=FALSE}
+
+style_panelset_tabs(foreground = "#FF8E00",)
+
+```
+
+
 .panelset[
 
-.panel[.panel-name[ Part 3 ]
+.panel[.panel-name[ **Part 3** ]
 
-  - Students transition from individual to group work
+  - Students **transition from individual to group work**
   
-  - Geographic data management
+  - **Geographic data** management
   
   - More with text, and troubleshooting data issues
   
@@ -188,7 +250,7 @@ background-size: contain
   
   - Curating data in different formats, written documents, html files, slides
   
-  - Time permitting - additional 'Literate Programming' skills
+  - **Time permitting: additional 'Literate Programming' skills**
   
      - Using RStudio to create reports or slides (like this set)
      
@@ -197,6 +259,8 @@ background-size: contain
 ]
 
 .panel[.panel-name[**Example Map Data**]
+
+class: center
 
 ![U.S.A state population on ln scale](docs_files/images/states_lnpop.png)
 
@@ -232,32 +296,60 @@ background-size: contain
 
 ---
 
-### Course Challenges
+### Successes
 
-- First iteration developed with short notice for Spring 2021
+.pull-left[
 
-  - Hybrid (mostly remote) setting
+- **Dashboard Project** works well for this course.
 
-- R and Rstudio are changing rapidly
-
-  - Improvements and changes by the month
+  - Students learn to apply skills and manage, present, and maintain a project.
   
-  - Open source means more work to keep software up to date
+- Order of course material is now more refined.
   
-  - But software is great and getting better
+- Currently turning HTML lecture notes into slide decks like this
   
-- Wide variability in student comfort level with coding 
+- BUA 455 selected to test ILTA shared competencies this Spring.
+  
+- **Graduate TA's are essential** to grading coding assignments and help students
+  
+- **Feedback has been very positive**
 
-  - It's akin to learning a new language
+]
+
+.pull-right[
+
+![success graphic](docs_files/images/success.png)
+
+]
+  
+---
+
+### Challenges
+
+- **1st Iteration:** Developed with short notice for Spring 2021 (Hybrid)
+
+- **R and Rstudio are changing rapidly**
+
+  - Rapidly changing and improving
+  
+  - 'Open Source' means more work to keep software up to date
+  
+      - But R/Rstudio software are great and getting better
+  
+- **Wide variability in student comfort level with coding** 
+
+  - Akin to learning new languages (S, Markdown)
 
   - Requires practice and patience
 
-- Effective assessment of data management skills is difficult
+- **Assessment of data management skills is challenging**
 
 ---
   
-### Effective Assessment
-  
+### Effective Assessment Challenges
+
+.pull-left[
+
 - Intermediary assessment is key for the success of the course
 
   - Each project group should include a wide range of skills
@@ -266,10 +358,19 @@ background-size: contain
 
 - Take-home tests invite academic dishonesty (too much temptation)
 
-
-- My solution: 
+]
   
-  - Two 70 minute in-class tests 
+.pull-right[
+
+![challenges graphic](docs_files/images/challenges.png)
+
+]
+
+---
+
+### Solution for Assessment
+
+- **Two 70 minute in-class tests **
   
   - Test is taken in R/RStudio using provided R project and template 
   
@@ -280,4 +381,44 @@ background-size: contain
   - Blackboard allows for multiple versions of same questions
   
   - Grade is based on both submitted R code and answers to Blackboard questions
+  
+---
+
+### What's Next
+
+- Short-term:
+
+  - A little more sleep
+
+  - Creating a R code and demo repository 
+
+  - Continuing to refine the material and assignments
+  
+- Longer-term:
+
+  - Develop a data visualization course that picks up where this one ends
+  
+---
+
+background-image: url("docs_files/images/whitman_faded.png")
+background-size: cover
+
+class: center middle
+
+## Thank you Whitman Teaching Committee
+
+<br>
+
+<br>
+
+### Questions?
+
+---
+  
+
+  
+  
+  
+  
+
 
