@@ -75,7 +75,7 @@ style_duo(
   primary_color = "#203299",                # SU_Blue2
   secondary_color = "#FF8E00",              # SU_Orange2
   inverse_header_color = "#FFFFFF",         # SU_White
-  link_color = "#FF4500",                   # orange_red
+  link_color = "#FF431B",                   # SU_Red_Orange
   code_inline_color = "#FF431B",            # SU_Red_Orange
   text_bold_color = "#F76900",              # SU_Orange1
 
@@ -182,10 +182,15 @@ background-size: contain
     - File management and documentation
   
   - Data skills:
-     - Selecting variables and formatting variables
+  
+     - Selecting and formatting variables
+     
      - filtering data
+     
      - grouping and summarizing data
+     
      - reshaping data for plots or tables
+     
      - Visualizing and presenting data
     
   - Assignments 1 - 3 reinforce these skills
@@ -203,10 +208,14 @@ background-size: contain
 
 **Importing and Combining Data from Different Sources**
 
-  - Data formats
+  - Data formats 
+  
   - Joining datasets in different ways
+  
   - Managing and cleaning text string data
+  
   - Documenting and crediting data sources
+  
   - Expanding on skills from Part 1
   
 - Assignments 4 and 5 - Part 1 (Dashboard Assignment)
@@ -245,17 +254,15 @@ style_panelset_tabs(active_foreground = "#FF8E00",
 
 .panel[.panel-name[ **Part 3** ]
 
-  - Add to Introductory Dashboard Assignment (HW 5 - Part 1)
-  
-    - [HW 5 - Part 2](https://rpubs.com/PeneLope_PE/900345) expands on prior assignment.
+**Students complete both individual and group work**
 
-  - Students **transition from individual to group work**
-  
+- Individual work:
+
+   - **<span style="text-decoration:underline">[HW 5 - Part 2](https://rpubs.com/PeneLope_PE/900345)</span>** expands on prior dashboard assignment.
+   
   - **Geographic data** management
   
   - More with text, and troubleshooting data issues
-  
-  - Student Project Questions
   
   - Curating data in different formats, written documents, html files, slides
   
@@ -264,12 +271,17 @@ style_panelset_tabs(active_foreground = "#FF8E00",
      - Using RStudio to create reports or slides (like this set)
      
      - Introduction to github and version control
+     
+<br>
+     
+- Group work: 
+
+  - Students work on projects and submit/ask questions
+
 
 ]
 
 .panel[.panel-name[**Example Map Data**]
-
-class: center
 
 ![U.S.A state population on ln scale](docs_files/images/states_lnpop.png)
 
@@ -303,9 +315,10 @@ class: center
 
 **Students manage, curate, and present data in a collaborative setting to a achieve an objective.**
 
-- [Example Student Group Dashboard 1 (Fall 2021)](https://rpubs.com/PeneLope_PE/878347)
 
-- [Example Student Group Dashboard 2 (Spring 2022)](https://rpubs.com/wducott/dashboard)
+- **<span style="text-decoration:underline">[Example Student Group Dashboard 1 (Fall 2021)](https://rpubs.com/PeneLope_PE/878347)</span>**
+
+- **<span style="text-decoration:underline">[Example Student Group Dashboard 2 (Spring 2022)](https://rpubs.com/wducott/dashboard)</span>**
 
 ---
 
@@ -335,10 +348,11 @@ class: center
 
 ![Adirondack peak on a sunny day](docs_files/images/dacks_image.png)
 
-[Adirondack Regional Tourism Council](https://visitadirondacks.com/)
+<span style="text-decoration:underline">[Adirondack Regional Tourism Council](https://visitadirondacks.com/)</span>
 
 ]
-  
+
+
 ---
 
 ### Challenges
@@ -367,7 +381,7 @@ class: center
 
 ![Adirondack peak on a cloudy day](docs_files/images/dacks_image_cloudy.png)
 
-[Adirondack Regional Tourism Council](https://visitadirondacks.com/)
+<span style="text-decoration:underline">[Adirondack Regional Tourism Council](https://visitadirondacks.com/)</span>
 
 ]
 
@@ -390,7 +404,8 @@ class: center
 .pull-right[
 
 ![Puzzle graphic with assessment](docs_files/images/assessment.png)
-[LoveLearningIdeas.com](http://www.lovelearningideas.com/)
+<span style="text-decoration:underline">[LoveLearningIdeas.com](http://www.lovelearningideas.com/)</span>
+
 ]
 
 ---
@@ -416,7 +431,7 @@ class: center
 .pull-right[
 
 ![Puzzle graphic with assessment](docs_files/images/assessment.png)
-[LoveLearningIdeas.com](http://www.lovelearningideas.com/)
+<span style="text-decoration:underline">[LoveLearningIdeas.com](http://www.lovelearningideas.com/)</span>
 
 ]
 
