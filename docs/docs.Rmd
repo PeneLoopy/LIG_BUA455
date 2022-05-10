@@ -75,7 +75,7 @@ style_duo(
   primary_color = "#203299",                # SU_Blue2
   secondary_color = "#FF8E00",              # SU_Orange2
   inverse_header_color = "#FFFFFF",         # SU_White
-  link_color = "#FF431B",                   # SU_Red_Orange
+  link_color = "#F76900",                   # SU_Orange1
   code_inline_color = "#FF431B",            # SU_Red_Orange
   text_bold_color = "#F76900",              # SU_Orange1
 
@@ -119,7 +119,6 @@ xaringanExtra::use_animate_css()
 xaringanExtra::use_animate_all("slide_up")
 
 ```
-
 
 
 background-image: url("docs_files/images/whitman_faded.png")
@@ -268,9 +267,11 @@ style_panelset_tabs(active_foreground = "#FF8E00",
   
   - **Time permitting: additional 'Literate Programming' skills**
   
-     - Using RStudio to create reports or slides (like this set)
+     - Using RStudio to create reports or slides (like this deck)
      
-     - Introduction to github and version control
+     - Introduction to GitHub and version control
+     
+  - **<span style="text-decoration:underline">[How to talk about skillset](https://drive.google.com/file/d/1_VoM3D6tPftjZpXCnTL8SKYBlOM_4KjG/view?usp=sharing)</span>**
      
 <br>
      
@@ -298,12 +299,13 @@ style_panelset_tabs(active_foreground = "#FF8E00",
 **Group Project**
 
   - **Students Groups (5 - 6 Students) :**
+  
      - Develop a proposal with 3 or more questions
      - Identify multiple data sources to address questions
-     - Combine and curate data to develop a multi-panel dashboard
-
+     - Manage, combine, and curate data to develop a multi-panel dashboard
 
   - **Dashboard must include both:**
+  
      - Interactive and static visualizations with explanatory text
      - Linked text citations to data sources
      
@@ -424,7 +426,7 @@ style_panelset_tabs(active_foreground = "#FF8E00",
   
   - Blackboard allows for multiple versions of same questions
   
-  - **Grade is based on both submitted R code and answers to Blackboard questions.**
+  - ***Grade is based on both submitted R code and answers to Blackboard questions.***
 
 ]
 
