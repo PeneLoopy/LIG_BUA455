@@ -330,7 +330,7 @@ style_panelset_tabs(active_foreground = "#FF8E00",
 
 - **Dashboard Project** works well for this course.
 
-  - Students learn to apply skills and manage, present, and maintain a project.
+  - Students learn to apply skills and manage, present, and maintain a data project.
   
 - Order of course material is now more refined.
   
