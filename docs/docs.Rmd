@@ -18,6 +18,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   fig.retina = 2,
@@ -33,7 +34,7 @@ knitr::opts_chunk$set(
 if (!require("pacman")) install.packages("pacman", repos = "http://lib.stat.cmu.edu/R/CRAN/")
 
 # install and load required packages
-pacman::p_load(pacman, tidyverse, fontawesome, xaringanExtra)
+pacman::p_load(pacman, tidyverse, fontawesome, xaringanExtra, chromeprint, pdftools, glue)
 
 ```
 
@@ -459,7 +460,7 @@ style_panelset_tabs(active_foreground = "#FF8E00",
 
 - A little more sleep
 
-- Creating a R code and video demo repository
+- Creating an R code and video demo repository
 
 - Continuing to refine the material and assignments
   
